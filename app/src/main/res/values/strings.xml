@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">COP3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--untuk radio button-->
+    <string name="nomor_lp">Nomor LP</string>
+    <string name="nama_pelapor">Nama Pelapor</string>
+</resources>

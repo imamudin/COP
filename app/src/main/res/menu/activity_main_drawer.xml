@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_monitoring"
+            android:icon="@drawable/ic_menu_monitoring"
+            android:title="Monitoring" />
+        <item
+            android:id="@+id/nav_backup"
+            android:icon="@drawable/ic_menu_backup"
+            android:title="Upload Berkas" />
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Slideshow" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_del_sp"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Delete SP" />
+        </menu>
+    </item>
+
+</menu>

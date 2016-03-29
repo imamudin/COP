@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imamudin.cop">
+
+    <!-- For accessing Internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- For checking current network state -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- For waking device from sleep for showing notification -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- For vibrating device -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- For receiving GCM messages -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--For access hardware camera-->
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--untuk mendapatkan koordinat GPS-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--menyimpan gambar dengan ukuran penuh-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"-->
+    <!--android:maxSdkVersion="18" />-->
+
+
+    <!-- For protecting GCM messages so that only your app can receive them -->
+    <permission
+        android:name="cop.imamudin.com.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="cop.imamudin.com..permission.C2D_MESSAGE" />
+
+    <application
+        android:name="app.MyAppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:theme="@style/LoginTheme.ActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MainTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivityMonitor"
+            android:theme="@style/MainTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityMonitor" />
+        </activity>
+        <activity
+            android:name=".BerkasSatu"
+            android:theme="@style/ChildTheme"
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".CariKasus"
+            android:theme="@style/ChildTheme"
+            android:parentActivityName=".BerkasSatu"
+            android:configChanges="orientation|screenSize">
+        </activity>
+    </application>
+</manifest>

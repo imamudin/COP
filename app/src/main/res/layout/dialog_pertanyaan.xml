@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Judul"
+        android:id="@+id/t_title_dialog"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pertanyaan"
+                        android:id="@+id/pertanyaan" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/et_dialog_pertanyaan" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jawaban"
+                        android:id="@+id/textView3" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/et_dialog_jawaban" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

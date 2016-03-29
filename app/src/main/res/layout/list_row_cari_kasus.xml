@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/indicator_tambah_berkas"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="PENCURIAN KENDARAAN BERMOTOR (CURANMOR) RODA DUA"
+            android:id="@+id/tv_nama_kasus"
+            android:singleLine="true"
+            android:textIsSelectable="false"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agung Imamudin"
+            android:singleLine="true"
+            android:id="@+id/tv_nama_pelapor"
+            android:textSize="13dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LPB/785/XII/2015/SPKT"
+            android:singleLine="true"
+            android:id="@+id/tv_no_lp"
+            android:layout_weight="1"
+            android:textSize="11dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13 03 2016"
+            android:id="@+id/tv_tgl_kejadian"
+            android:textSize="11dp" />
+    </LinearLayout>
+</LinearLayout>

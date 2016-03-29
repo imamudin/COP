@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nama"
+        android:id="@+id/t_title_dialog"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+    <LinearLayout
+        android:id="@+id/t_kamera"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/indicator_tambah_berkas">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Kamera"
+            android:id="@+id/t_camera"
+            android:textIsSelectable="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/t_galeri"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/indicator_tambah_berkas">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="File"
+            android:id="@+id/t_text_dialog"/>
+    </LinearLayout>
+</LinearLayout>

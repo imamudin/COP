@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_horizontal"
+    android:id="@+id/fragment_gallery">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_gallery1">
+
+        <LinearLayout
+            android:id="@+id/ln_interogasi"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_interogasi"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interogasi"
+                android:id="@+id/textView3"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_lit_dokumen"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/ic_dokumen"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIT Dokumen"
+                android:id="@+id/textView4"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_observasi"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_observasi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observasi"
+                android:id="@+id/textView5"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_gallery2">
+
+        <LinearLayout
+            android:id="@+id/ln_surveillancce"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView5"
+                android:src="@drawable/ic_surveillance"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surveillance"
+                android:id="@+id/textView6"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_tracking_cash_flow"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView7"
+                android:src="@drawable/ic_tracking_cash_flow"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracking Cash Flow"
+                android:id="@+id/textView7"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_tracking_hp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_tracking_hp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracking HP"
+                android:id="@+id/textView8"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ln_tracking_SMS"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView9"
+                android:src="@drawable/ic_tracking_sms"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracking SMS"
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_undercover"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView11"
+                android:src="@drawable/ic_undercover"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UnderCover"
+                android:id="@+id/textView12"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_undercover_buy"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/indicator_tambah_berkas">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView13"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_undercover_buy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Undercover Buy"
+                android:id="@+id/textView14"
+                android:layout_gravity="center"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

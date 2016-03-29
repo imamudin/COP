@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="36dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:id="@+id/img_edit"
+                android:src="@drawable/ic_edit"
+                android:padding="2dp"
+                android:background="@drawable/bg_image_btn_pertanyaan"
+                android:layout_gravity="top" />
+            <ImageButton
+                android:layout_width="36dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginTop="4dp"
+                android:id="@+id/img_hapus"
+                android:src="@drawable/ic_clear"
+                android:padding="2dp"
+                android:background="@drawable/bg_image_btn_pertanyaan"
+                android:layout_gravity="top" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/et_pertanyaan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:text="Bagamana kronologi Kejadian?"
+                android:padding="5dip"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/secondary_text_default_material_light" />
+
+            <TextView
+                android:id="@+id/et_jawaban"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:text="Nama Jessica mencuat setelah menjadi saksi"
+                android:padding="5dip"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/secondary_text_default_material_light" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="3dp"></LinearLayout>
+            <!--kematian Wayan Mirna Salihin di Kafe Olivier, Mall
+            Grand Indonesia, Jakarta pusat, pada Rabu, 6 Januari 2016.
+            Saat sedang berkumpul, Mirna mendadak kejang-kejang dan
+            akhirnya tewas, setelah meminum kopi Vietnamesse yang
+            dipesankan Jessica untuknya.-->
+            <!--Dua hari setelah kejadian, polisi menggeledah rumah
+            Jessica di Sunter Agung, Jakarta Utara. Namun saat itu
+            Jessica menolak diperiksa dengan alasan polisi tak punya
+             surat pemeriksaan resmi. Baru pada hari Senin-nya,
+             Jessica mau diperiksa. Jessica kemudian melakukan
+             empat pemeriksaan lain."-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
